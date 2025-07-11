@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin :0;}
+        div{
+            width:300px;height:300px;background-color: orange;
+        }
+        .d1{
+            /* all direction 동일 설정 */
+            /* margin:20px; */
+            /* top,bottom:20  left,right:40 */
+            /* margin : 20px 40px ; */
+            /* top:10 right:20 bottom:30 (left:20) */
+            /* margin: 10px 20px 30px; */
+            /*  */
+            
+            margin-top:10px;
+            margin-left:20px;
+            margin-bottom:30px;
+            margin-right : 40px;
+
+        }
+        
+            .d2{
+                margin:0 auto;
+
+            }
+            .parent{
+                width:80vw;
+                height:250px;
+                margin: 20px auto;
+
+            }
+            .son{
+                background-color: royalblue;
+                width:150px;
+                height:150px;
+
+            }
+            /* 가운데 맞추기1 */
+
+            .p1{
+                position:relative;
+            }
+            
+            .s1{
+                position:absolute;
+                left:0;
+                right:0;
+                top:0;
+                bottom:0;
+                margin: auto;
+            }
+            /* 가운데 맞추기2 */
+
+            .p2{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- <div class ='d1'>HELLO WORLD</div>
+
+    <div class ='d2'>HELLO WORLD</div> -->
+
+
+    <div class="parent p1">
+        <div class="son"></div>
+        <div class="son s1"></div>
+    </div>
+
+    <div class="parent p2">
+        <div class="son"></div>
+        <div class="son s2"></div>
+    </div>
+
+</body>
+</html>
+
+
+<!-- 
+
+로고를 특정 구역안에 맞출 때 쓰는 공식
+
+margin + position    -> 이미지 잡을 때 좀 더 유리함
+                        absulute라서 위치가 안 변함
+
+layout              -> 위치 변함
+
+-->
